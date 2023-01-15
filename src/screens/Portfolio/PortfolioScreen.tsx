@@ -11,6 +11,7 @@ import {
 import {Button, Container, Text} from '../../components';
 import {appStyles} from '../../config';
 import PieChart from 'react-native-pie-chart';
+import 'react-native-get-random-values';
 import {v4 as uuidv4} from 'uuid';
 import {ItemChart} from './ItemChart';
 import {VictoryPie} from 'victory-native';

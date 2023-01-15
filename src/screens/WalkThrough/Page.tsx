@@ -26,6 +26,7 @@ const Page = ({title, des}: Props) => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 24,
+    width: 320,
     color: '#080D45',
     textAlign: 'center',
     lineHeight: 36,
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   },
   des: {
     marginTop: 12,
-    width: 242,
+    width: 260,
     fontSize: 14,
     lineHeight: 21,
     textAlign: 'center',

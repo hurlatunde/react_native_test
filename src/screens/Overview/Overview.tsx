@@ -22,6 +22,7 @@ import FrameSix from '../../assets/svg/Frame-1000001909.svg';
 import FrameSeven from '../../assets/svg/Frame-10000019012.svg';
 import FrameEight from '../../assets/svg/Frame-1000001901.svg';
 import ArrowRight from '../../assets/svg/arrow-right.svg';
+import 'react-native-get-random-values';
 import {v4 as uuidv4} from 'uuid';
 import {goBack, navigate} from '../../navigation/rootNavigation';
 import {Toolbar} from '../../components/Toolbar';
