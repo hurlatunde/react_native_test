@@ -19,9 +19,10 @@ function App() {
   return (
     <NavigationContainer initialRouteName="Intro" ref={navigationRef}>
       <StatusBar
+        StatusBarStyle={'default'}
         barStyle={!isDarkMode ? 'light-content' : 'dark-content'}
-        translucent={true}
-        backgroundColor={'transparent'}
+        translucent={false}
+        backgroundColor={'#7F18D0'}
       />
       <Root.Navigator screenOptions={navigationOptions}>
         <Root.Screen name="Intro" component={IntroNavigation} />

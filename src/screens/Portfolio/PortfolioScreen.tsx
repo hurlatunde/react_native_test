@@ -8,7 +8,7 @@ import {
   Alert,
   Pressable, Modal
 } from 'react-native';
-import {Button, Text} from '../../components';
+import {Button, Container, Text} from '../../components';
 import {appStyles} from '../../config';
 import PieChart from 'react-native-pie-chart';
 import {v4 as uuidv4} from 'uuid';
@@ -74,7 +74,7 @@ const PortfolioScreen = ({}: Props) => {
         backgroundColor: '#FFFFFF',
         //flex: 1
       }}>
-      <SafeAreaView>
+      <Container>
         <ScrollView>
           <Toolbar
             leftIconPress={() => goBack()}
@@ -129,7 +129,7 @@ const PortfolioScreen = ({}: Props) => {
             </View>
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </Container>
 
       <Modal
         animationType="slide"

@@ -35,6 +35,7 @@ import {
   VictoryTheme,
 } from 'victory-native';
 import {grayscale} from 'victory-core/src/victory-theme/grayscale';
+import Container from '../../components/Container/Container';
 
 type Props = {
   children?: any;
@@ -121,7 +122,7 @@ const Overview = ({children}: Props) => {
     {quarter: 11, earnings: 400},
   ];
 
-  const barRatio = '0.3';
+  const barRatio = 0.8;
 
   return (
     <View
@@ -131,7 +132,7 @@ const Overview = ({children}: Props) => {
         backgroundColor: '#FFFFFF',
         //flex: 1
       }}>
-      <SafeAreaView>
+      <Container>
         <ScrollView>
           <Toolbar leftIcon={<ArrowLeft />} />
 
@@ -231,10 +232,9 @@ const Overview = ({children}: Props) => {
 
                 <View>
                   <VictoryChart
-                      width={'333'}
+                    width={333}
                     theme={VictoryTheme.grayscale}
-                    domainPadding={{ x: 5 }}
-                  >
+                    domainPadding={{x: 5}}>
                     <VictoryAxis
                       style={{
                         axis: {stroke: 'transparent'},
@@ -251,7 +251,7 @@ const Overview = ({children}: Props) => {
                         style={{data: {fill: '#7F18D0'}}}
                         data={data2012}
                         barRatio={barRatio}
-                        alignment="center"
+                        alignment="middle"
                         x="quarter"
                         y="earnings"
                       />
@@ -260,7 +260,7 @@ const Overview = ({children}: Props) => {
                         style={{data: {fill: '#EDD9FC'}}}
                         data={data2013}
                         barRatio={barRatio}
-                        alignment="center"
+                        alignment="middle"
                         x="quarter"
                         y="earnings"
                       />
@@ -302,7 +302,7 @@ const Overview = ({children}: Props) => {
             </View>
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </Container>
     </View>
   );
 };
